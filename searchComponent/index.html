@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Search Component</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="group__input">
+            <input class="input__search" type="search" placeholder="Search" aria-label="Search">
+            <button class="button__search"> Search </button>
+        </div>
+    </nav>
+
+    <h1>Artists Search</h1>
+
+    <div id="resultados" class="results">
+
+        <div class="card" onclick="makeItGrey(this)">
+            <button class="card__button" onclick="removeCard(this)">X</button>
+            <img class="imagem" src="https://www.rbsdirect.com.br/imagesrc/25656152.jpg?w=800&h=535&a=c%201x"/>
+            <div class="">
+                <h2>David Bowie</h5>
+                <a class="linkMusica" href="https://www.youtube.com/watch?v=lXgkuM2NhYI">
+                    <strong>Música</strong>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+   <div>
+        <button class="button__delete-all">Deletar todos</button>
+   </div>
+
+
+   <script type="text/javascript"  src="script.js"></script>
+</body>
+</html>
