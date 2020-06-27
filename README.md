@@ -6,7 +6,7 @@
 
 Uma array é uma coleção ordenada de itens, onde cada item tem um *índice(index)*.
 
-*arrays tem o índice começando no zero.*
+__Arrays tem o índice começando no zero.__
 
 ![animal array](https://mernstack917190716.files.wordpress.com/2018/05/array.jpg?w=840)
 
