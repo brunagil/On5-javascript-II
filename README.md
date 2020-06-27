@@ -1,6 +1,6 @@
 # Estruturas de dados
 
-### Arrays
+## Arrays
 
 ![arrays in javascript](https://miro.medium.com/max/1400/0*jJba103A-9xmpTYq.jpg)
 
@@ -17,7 +17,7 @@ console.log(arr[0]);              // logs 'Zebra'
 console.log(arr[1]);              // logs 'Rhino'
 ```
 
-##### Length
+### Length
 
 É uma propriedade de Arrays que mostra o número de elementos contidos na mesma.
 
@@ -42,7 +42,7 @@ Arrays podem conter vários tipos de dados:
 ```
 Doc MDN: [MDN - Arrays JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-#### Métodos de Arrays
+### Métodos de Arrays
 
 Existem vários métodos já prontinhos que o JS nos dá para manipular dados de arrays. Eles são extremamente úteis e muito utilizados no dia-a-dia de pessoas desenvolvedoras.
 
@@ -62,7 +62,7 @@ Alguns exemplos:
 Doc Referência: [w3Schools](https://www.w3schools.com/js/js_array_methods.asp)
 
 
-#### Iterando por uma Array
+### Iterando por uma Array
 ```
 const arrayNomes = ['roberta', 'fernanda', 'denise', 'marcela']
 
@@ -77,7 +77,7 @@ denise
 marcela
 ```
 
-### Objetos
+## Objetos
 
 ![objetos javascript](https://blog.dankicode.com/wp-content/uploads/2019/08/Objetos-em-JavaScript.png)
 
@@ -93,7 +93,7 @@ Um objeto é uma coleção de propriedades, e uma propriedade é uma associaçã
 ```
 
 #### Acessando objetos
-###### Dot notation vs Bracket notation
+##### Dot notation vs Bracket notation
 ```
     pessoa.nome // jonas
     pessoa['nome'] // jonas
@@ -104,7 +104,7 @@ Por padrão prefira usar o '.' ou dot notation, é mais fácil de ler e mais rá
 
 Doc MDN: [MDN - Objetos JavaScript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Objetos/B%C3%A1sico)
 
-#### Iterando por um Array de objetos
+### Iterando por um Array de objetos
 
 ```
 const arrayDeObjetos = [
@@ -128,10 +128,6 @@ logs:
 {user: 238, name: "Isis", idade: 34}
 {user: 239, name: "Pietra", idade: 23}
 ```
-
-##### Usando estrutura de dados + JavaScript e DOM
-- para criar efeitos, mostrar e modificiar itens na tela de forma dinâmica.
-
 
 
 ### Template Strings
@@ -178,6 +174,15 @@ sem teplate string:
 ```
 console.log('meu nome é ' + nome);
 ```
+
+### Utilizando estrutura de dados e efeitos do DOM
+- ex-arrays-2
+- searchComponent
+- slider
+
+### Exercício da Semana
+
+[__To do List__](./todolist/readme.md)
 
 Doc MDN: [Template Strings](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings)
 
