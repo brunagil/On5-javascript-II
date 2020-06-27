@@ -11,15 +11,15 @@ __Arrays tem o índice começando no zero.__
 ![animal array](https://mernstack917190716.files.wordpress.com/2018/05/array.jpg?w=840)
 
 ```
-const arr = ['esse é primeiro elemento', 'segundo elemento', 'último elemento'];
+const arr = ['Zebra', 'Rhino', 'Giraffe', 'Owl'];
 
-console.log(arr[0]);              // logs 'primeiro elemento'
-console.log(arr[1]);              // logs 'segundo elemento'
+console.log(arr[0]);              // logs 'Zebra'
+console.log(arr[1]);              // logs 'Rhino'
 ```
 
 ##### Length
 
-É uma propriedade de Arrays que monstra o número de elementos contidos na mesma.
+É uma propriedade de Arrays que mostra o número de elementos contidos na mesma.
 
 Exemplo:
 ```
@@ -101,11 +101,6 @@ Um objeto é uma coleção de propriedades, e uma propriedade é uma associaçã
 
 Por padrão prefira usar o '.' ou dot notation, é mais fácil de ler e mais rápido de escrever. Apenas em alguns caso específicos usamos os brackets(colchetes). Por exemplo, quando a propriedade começa com número ou for uma string que tenha mais de um nome (ex: 'thank-you').
 
-```
-Object.keys - Esse método retorna um array com todos os nomes ("chaves") de propriedades próprios de um objeto.
-
-Object.hasOwnProperty(nome-da-propriedade) checa se o Objeto tem x propriedade e retorna true ou false.
-```
 
 Doc MDN: [MDN - Objetos JavaScript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Objetos/B%C3%A1sico)
 
@@ -139,7 +134,7 @@ logs:
 
 
 
-#### Template Strings
+### Template Strings
 São strings que permitem que coloquemos dentro dela expressões ou variáveis.
 
 Para declara-las usamos 'crase'.
@@ -182,7 +177,7 @@ console.log(frase) -> 'meu nome é Simone'
 sem teplate string:
 ```
 console.log('meu nome é ' + nome);
-
+```
 
 Doc MDN: [Template Strings](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings)
 
