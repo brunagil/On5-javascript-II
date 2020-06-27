@@ -135,7 +135,7 @@ logs:
 
 
 ### Template Strings
-São strings que permitem que coloquemos dentro dela expressões ou variáveis.
+São strings que permitem que coloquemos dentro delas expressões ou variáveis.
 
 Para declara-las usamos 'crase'.
 
