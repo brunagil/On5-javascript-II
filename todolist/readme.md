@@ -8,7 +8,7 @@ Critérios de aceite:
 - poder adicionar tarefas
 - poder remover tarefas
 - poder marcar tarefas como feitas
-- ao adicionar tarefa, o campo de input deve ser limpado.
+- ao adicionar tarefa, o campo de input deve ser limpo.
 - não pode adicionar tarefa vazia
 
 Nice-to-Have:
