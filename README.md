@@ -175,7 +175,7 @@ sem teplate string:
 console.log('meu nome é ' + nome);
 ```
 
-### Utilizando estrutura de dados e efeitos do DOM
+### Utilizando estrutura de dados e efeitos para modificar o DOM
 - ex-arrays-2
 - searchComponent
 - slider
