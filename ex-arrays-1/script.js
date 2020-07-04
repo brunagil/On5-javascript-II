@@ -17,7 +17,7 @@ const numbers = [1,2,3,4,5]
 // 6- remova os espaços no começo da string
 const string = '    natalya'
 
-// 7- check que se o tipo do primeiro item da array é igual ao primeiro
+// 7- cheque que se o tipo do primeiro item da array é igual ao do segundo item
 // e retorno verdadeiro ou falso.
 const frutas = ['morango', 1 , 'abacaxi', 'banana']
 
