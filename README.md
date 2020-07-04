@@ -31,7 +31,7 @@ Podemos usa-lo também para pegar o último item de uma array:
 ```
 const clothing = ['shoes', 'shirts', 'socks', 'sweaters'];
 
-console.log(clothing[clothing.length -1 ]); // 4
+console.log(clothing[clothing.length - 1]); // 'sweaters'
 ````
 
 Arrays podem conter vários tipos de dados:
@@ -174,6 +174,8 @@ sem teplate string:
 ```
 console.log('meu nome é ' + nome);
 ```
+Doc MDN: [Template Strings](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings)
+
 
 ### Utilizando estrutura de dados e efeitos para modificar o DOM
 - ex-arrays-2
@@ -184,9 +186,8 @@ console.log('meu nome é ' + nome);
 
 [__To do List__](./todolist/readme.md)
 
-Doc MDN: [Template Strings](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings)
-
 
 ### Links
-* MDN
-* W3schools
+* https://www.freecodecamp.org/learn/
+* https://www.cursoemvideo.com/cursos/
+* Escopo: https://imasters.com.br/desenvolvimento/escopos-em-javascript
