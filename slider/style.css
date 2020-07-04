@@ -53,6 +53,10 @@
     text-align: center;
 }
 
+.text-bold {
+    font-weight: bolder;
+}
+
 /* Number text (1/3) */
 .numbertext {
     color: #f2f2f2;
@@ -80,6 +84,7 @@
 }
 
 /* Fading animation */
+/* Key Frames */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -88,8 +93,10 @@
 @keyframes fade {
     from {
         opacity: .4;
+        transform: scale(1.2);
     }
     to {
         opacity: 1;
+        transform: scale(1.2);
     }
 }

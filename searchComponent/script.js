@@ -29,14 +29,60 @@ const cards = [
 
 const button = document.querySelector('.button__search')
 const resultados = document.getElementById('resultados')
-
+const input  = document.querySelector('.input__search')
+const errorMessage = document.querySelector('.error')
+const buttonDeleteAll = document.querySelector('.button__delete-all')
 
 
 button.addEventListener('click', function() {
+    resultados.innerHTML = ''
+    const query = input.value.toLowerCase().trim()
+
+    if (query.length === 0) {
+        return errorMessage.innerHTML = 'digite algo, por gentileza'
+    }
 
     for (let i = 0; i < cards.length; i++) {
-        console.log(cards[i])
+        if (cards[i].titulo.toLowerCase().includes(query)) {
+            resultados.innerHTML += `
+            <div class="card" onclick="makeItGrey(this)">
+                <button class="card__button" onclick="removeCard(this)">X</button>
+                <img class="imagem" src="${cards[i].imagem}"/>
+                <div class="">
+                    <h2>${cards[i].titulo}</h2>
+                    <a class="linkMusica" href="${cards[i].linkMusica}">
+                        <strong>Música</strong>
+                    </a>
+                </div>
+            </div>
+        `
+        }
+    }
+})
 
+function removeCard(item) {
+    item.parentNode.remove()
+}
+
+function makeItGrey(item) {
+    item.classList.toggle('grey')
+}
+
+input.addEventListener('focus', function() {
+    errorMessage.textContent = ''
+    input.value = ''
+})
+
+
+buttonDeleteAll.addEventListener('click', function() {
+    const artistas = document.querySelectorAll('.card')
+    for (let i = 0; i < artistas.length; i++) {
+        artistas[i].remove()
+    }
+})
+
+window.onload = function() {
+    for (let i = 0; i < cards.length; i++) {
         resultados.innerHTML += `
         <div class="card" onclick="makeItGrey(this)">
             <button class="card__button" onclick="removeCard(this)">X</button>
@@ -50,5 +96,4 @@ button.addEventListener('click', function() {
         </div>
     `
     }
-
-})
+}

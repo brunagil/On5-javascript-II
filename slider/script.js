@@ -26,10 +26,12 @@ function showSlides(n) {
     // ficam embaixo na foto.
     const dots = document.querySelectorAll('.dot');
 
+    //controla o slideIndex para nao avançar do length da array
     if (n > slides.length) {
          slideIndex = 1
     }
 
+     //controla o slideIndex para nao ficar um valor negativo
     if (n < 1) {
         slideIndex = slides.length
     }

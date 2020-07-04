@@ -19,6 +19,12 @@ body {
     width: 200px;
 }
 
+.error {
+    color:red;
+    font-size: 12px;
+    margin: 6px 0 6px 6px;
+}
+
 h1 {
     margin-top: 60px;
     text-align: center;
@@ -48,6 +54,8 @@ h1 {
     float: right;;
     right: 10px;
 }
+
+
 
 
 .card {
