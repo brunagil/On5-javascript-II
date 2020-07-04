@@ -1,14 +1,20 @@
 const button = document.getElementById('button')
 
 button.addEventListener('click', function() {
+    //tira o botao da tela
+    button.remove()
+
     const dogs = ['Dakota', 'Arizona', 'Gloria', 'Rex', 'Bolinha', 'Caixote'];
+
     const result = document.getElementById('result')
     const resultList = document.getElementById('resultList')
 
-    result.innerHTML = 'O array dogs tem ' + dogs.length + ' itens:'
+    result.innerHTML = `O array dogs tem ${dogs.length} itens:`
 
+    //esvazia a lista de 'li' antes de criar novamente
+    resultList.innerHTML = ''
     for (let i = 0; i < dogs.length; i++) {
-        resultList.innerHTML = '<li>' + dogs[i] + '</li>'
+        resultList.innerHTML += `<li>${dogs[i]}</li>`
     }
 });
 
