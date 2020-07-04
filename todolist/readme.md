@@ -25,6 +25,7 @@ todolist/
     readme.md -> arquivo read me que lemos agora
     imgs -> pasta onde está a imagem que aparece neste readme que lemos agora
 ```
+- data final de entrega __10/07__(sexta-feira)
 
 
 __Funcionalidades__:
