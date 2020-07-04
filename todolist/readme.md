@@ -27,7 +27,7 @@ todolist/
 ```
 
 
-Critérios de aceite:
+__Funcionalidades__:
 - poder adicionar tarefas
 - poder remover tarefas
 - poder marcar tarefas como feitas
