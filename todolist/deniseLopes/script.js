@@ -2,11 +2,14 @@
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
-const alerta = document.querySelector('.mensage');
+const alerta = document.querySelector('.message');
+const limpAll = document.querySelector('.fa-power-off');
+const checkAll = document.querySelector('.fa-tasks');
 
 //Event Listeners
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
+// checkAll.addEventListener('click', limpaCheckAll);
 
 
 //Functions
@@ -71,60 +74,44 @@ function deleteCheck(e){
     }
 }
 
+limpAll.addEventListener('click', function(){
+    todoList.remove();
+});
+
+checkAll.addEventListener('click', function(){
+    todoList.classList.toggle('completed');
+    if(todoInput.value = ""){
+        const newTodoCheck = document.createElement("li");
+        newTodoCheck.innerText = todoInput.value;
+        newTodoCheck.classList.add("todo-item");
+        todoDivCheck.appendChild(newTodoCheck);
+    }
+    else{
+        const newTodo = document.createElement("li");
+        newTodo.innerText = todoInput.value;
+        newTodo.classList.add("todo-item");
+        todoDiv.appendChild(newTodo);
+    }
+    
+});
 
 
+// //Função do botão limpar lista
+// function limpaCheckAll(e){
+//     const item = e.target;
+//     for(let i=0; i<classList.length; i++){
+//         if(item.classList[i] === fa-power-off){
+//         const tudo = item.parent.parentElement;
+//         todo.remove();
+//         }
 
+//     }    
+    
 
-
-
-
-//  const element = document.getElementById("element");
-
-//  var item  = document.querySelector(".inputItens");
-//  let lista = document.querySelector("#lista");
-//  const btnInputItens = document.querySelector(".btnInserirItens");
-//  const btnDeleteItem = document.querySelector(".btnDeletarItem");
-//  var li
-
-//  //Adicionar itens na lista clicando no botão 'Adicionar item'.
-//  btnInputItens.addEventListener('click', addItem);
-//  function addItem (){
-//      if(item.value != ""){
-//      let itemAdd = '<li>' + item.value + '</li>';
-//      lista.innerHTML +=itemAdd;
-//      item.value = "";
-//      item.focus();
-//      }    
-//  }
-
-//  //Adicionar itens na lista clicando em 'Enter'.
-//  item.addEventListener('keyup', function(e){
-//      if(e.keyCode === 13){
-//          addItem()
-//      }
-//  })
-
-// //criando o botão check
-// const btnComplete = document.createElement("button");
-// btnComplete.innerHTML = <i class="fas fa-check"></i>;
-// btnComplete.classList.add("btn-complete");
-// inserirItens.appendChild(btnComplete);
-
-
-// //criando um botão
-// function addNewBtn(){
-//     $("body").append("<button>-</button>");
 // }
-//  removeTask = function(){
-//      for(var i = 0 ; i<lista.children.length; i++){
-//          if(li.children[i].getAttribute("i") == item){
-//              li.children[i].remove();
-//          }
-//      }
-//  }
-//  createRemoveItemBtn = function(){
-//      let btnRemoveItem = document.createElement("button");
-//      btnRemoveItem.setAttribute("onclick", "removeItem("+item+")");
-//      btnRemoveItem.innerHTML = "x";
-//      return btnRemoveItem;
-//  }
+
+
+
+
+
+
