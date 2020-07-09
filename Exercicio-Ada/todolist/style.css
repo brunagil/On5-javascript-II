@@ -1,0 +1,50 @@
+
+*{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+.banner{
+    background: url(./imgs/banner.jpg) no-repeat;
+    height: 60vh;
+    background-size: cover;
+
+}
+.container-sm{
+    background-color:#1b6ca8 ;
+    padding-bottom: 30px;
+
+}
+.btn-outline-primary{
+    border-color: #f8b24f;
+    color:#f8b24f
+}
+.btn-outline-primary:hover{
+    border-color: #e5e5e5;
+    color:#303960;
+    background-color: #e5e5e5;
+}
+.banner div h1{
+    padding-top: 20vh;
+    text-transform: uppercase;
+    color:white;
+    text-shadow: 2px 5px #f8b24f;
+    font-size:90px;  
+    text-align: center;  
+}
+.form-check-label{    
+    padding-left: 35px;
+}
+
+#tarefaLabel{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.form-check-input{
+    height: 20px;
+    width: 20px;    
+} 
+
+.form-check-label {
+    text-transform: capitalize
+    
+}
