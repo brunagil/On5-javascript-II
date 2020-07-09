@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/img/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 100vh;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+}
+
+/*Código para fixar footer no fim da página*/
+html {
+    height: 100%;
+}
+  
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.content {
+    flex: 1;
+}
+/*Fim do código para fixar footer no fim da página*/
+
+
+/*Animação para a lista de tarefas subir quando a página é aberta*/
+.minha_lista {
+    margin-top: 100px;
+    opacity: 0;
+
+    animation: linear forwards 1.5s 1s animacaoLista;
+}
+
+@keyframes animacaoLista {
+
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+/*Fim da animação*/
+
+
+.bloco_imagem_topo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.imagem_topo{
+    width: 200px;
+}
+
+.titulo_tarefas {
+    color: #00b9b3;
+    font-family: 'Pompiere', cursive;
+    font-size: 40px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bloco_tarefas {
+    background-color: #fafafa;
+    box-shadow: 10px 10px 20px -20px grey;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 30px;
+    text-align: center;
+}
+
+.entrada_tarefa {
+    width: 71%;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    outline: none;
+    font-size: 13px;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.sublinhado {
+    color: darkgrey;
+    font-style: oblique;
+    text-decoration: line-through;
+}
+
+
+.erro {
+    color: rgb(218, 52, 52);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.lista_tarefas {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+/*Todo o bloco do checkbox*/
+.container_check{
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+/*Deixando o checkbox padrão invisível*/
+.container_check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/*Deixa o checkbox verde quando clicado*/
+.container_check input:checked ~ .check {
+    background-color: #00b9b3;
+}
+
+/*Faz o V do checkbox aparecer quando clicado*/
+.container_check input:checked ~ .check::after {
+    display: block;
+}
+
+/* V do do checkbox*/
+.container_check .check:after {
+    top: 3px;
+    left: 5.4px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*Caixa do checkbox quando não clicada*/
+.check{
+    left: 0;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: lightgray;
+    position: absolute;
+}
+
+/*Carrega o V do checkbox e o posiciona, para quando ele for clicado, ficar no lugar correto*/
+.check:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.tarefa_unitaria {
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.tarefa_unitaria_informacao{
+    color: #5a5959;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.botao_tarefa,
+.botao_fechar,
+.botao_marca,
+.botao_desmarca,
+.botao_limpa {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px -10px black;
+    color: white;
+    cursor: pointer;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 6px;
+    text-transform: uppercase;    
+}
+
+.botao_tarefa {
+    background-color: #ffa601;
+}
+
+.botao_tarefa:hover{
+    background-color: #e69500;
+}
+
+.botao_fechar {
+    background-color: #ab92ff;
+}
+
+.botao_fechar:hover {
+    background-color: #8870da;
+}
+
+.botao_marca {
+    background-color: #7ad8c5;
+}
+
+.botao_marca:hover {
+    background-color: #65c0ae;
+}
+
+.botao_desmarca {
+    background-color: #6dd4d4;
+}
+
+.botao_desmarca:hover {
+    background-color: #54afaf;
+}
+
+.botao_limpa {
+    background-color: rgb(167, 164, 164);
+}
+
+.botao_limpa:hover {
+    background-color: rgb(136, 135, 135);
+}
+
+.creditos {
+    background-color: #54afaf;
+    box-shadow: 10px 10px 20px -20px grey;
+    color: white;
+    font-size: 10px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.creditos a {
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.creditos a:link,
+.creditos a:visited {
+    color: rgb(206, 252, 247);
+
+}
