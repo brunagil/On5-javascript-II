@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>To do list</title>
+</head>
+
+<body>
+
+    <nav>
+        <h1>My To Do List 📝</h1>
+    </nav>
+
+    <main>
+    
+    <div class="group__input">
+        <div class="taskslit__title">
+            <span class="title-page">Adicione uma nova tarefa</span>
+        </div>
+        <input class="input" type="text" placeholder="Adicione a sua nova tarefa" aria-label="Search">
+        <button class="button__add"> Adicionar </button>
+
+        <div class="tasklist__others-btn">
+            <button class="btns btn__check-all" id="checkAll">Marcar Todos</button>
+            <button id="delAll" class="btns">Deletar todos</button>
+        </div>
+
+        <p class="error"></p>
+
+        <div id="lista" class="lista"></div>
+        
+        <div class="tasklist-show"></div>
+    </div>
+</main>
+    
+
+
+
+
+   <script type="text/javascript"  src="script.js"></script>
+</body>
+</html>
