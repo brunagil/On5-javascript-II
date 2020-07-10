@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 77%);
+  height: 100vh;
+}
+
+h1 {
+  color: #98fb98;
+  text-align: center;
+  margin: 5% 5% 5% 8%;
+  text-transform: uppercase;
+  font-size: 3.5vh;
+  letter-spacing: 2px;
+}
+
+.input-adicionar {
+  width: 55vw;
+  height: 7px;
+  border: 1.5px solid #f37b90e8;
+  background: whitesmoke;
+  padding: 2%;
+  margin-left: 15%;
+  color: #8b008b;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #8b008b;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 1.5vh;
+  border-radius: 8px;
+  box-shadow: 4px 2px 5px black;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+#btn-adicionar {
+  background-color: #b12b90;
+  color: white;
+  margin-left: 10px;
+  padding: 3px;
+  font-size: 1.5vh;
+}
+
+#btn-adicionar:hover {
+  background: #fe4dd8;
+  margin-left: 15px;
+}
+
+.error {
+  color: rgba(239, 160, 160, 0.98);
+  font-size: 1.5vh;
+  text-transform: uppercase;
+  margin: 2% 13% 0 0;
+  text-align: right;
+}
+
+.container {
+  margin: 40px 60px;
+  height: auto;
+}
+
+.checkboxDaLista {
+  transform: scale(1.8);
+  position: fixed;
+  left: 15%;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.checkboxDaLista:checked {
+  margin-left: 25px;
+  transform: scale(2.5);
+}
+
+li {
+  margin-top: 10px;
+  font-size: 3vh;
+  color: #f191ac;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: center;
+  padding-bottom: 5px;
+}
+li:hover {
+  border-bottom: 1px dotted #f0c2cf;
+  opacity: .7;
+}
+
+.textoDoLi {
+  position: absolute;
+}
+
+.apagarItem {
+  font-size: 1.2vh;
+  padding: 4px;
+  text-transform: uppercase;
+  position: fixed;
+  background-color: rgb(250, 17, 17);
+  color: aliceblue;
+  cursor: pointer;
+  right: 15%;
+  box-shadow: 4px 2px 5px black;
+}
+
+.apagarItem:hover{
+  transform: scale(1.2);
+}
+
+#btn-todos {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+
+#btn-delete-all {
+  background-color: rgb(190, 33, 33);
+  padding: 5px;
+  color: white;
+}
+#btn-delete-all:hover {
+  background: rgb(248, 2, 2);
+}
+
+#btn-marcar-all {
+  background-color: rgb(42, 172, 42);
+  padding: 6px;
+  color: white;
+}
+#btn-marcar-all:hover {
+  background-color: rgb(39, 245, 39);
+}
+
+#btn-desmarcar-all{
+  color: white;
+  background: teal;
+  padding: 6px;
+}
+#btn-desmarcar-all:hover{
+  background: rgb(34, 248, 248);
+  }

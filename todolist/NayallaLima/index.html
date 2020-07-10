@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+
+    <title>Lista de atividades</title>
+</head>
+
+<body>
+    <header>
+        <h1> Lista de tarefas</h1>
+    </header>
+
+    <div class="group-input">
+        <input class="input-adicionar" id="tarefa" type="text" placeholder="Adicione suas atividades">
+        <button class="btn" id="btn-adicionar">Adicionar</button>
+    </div>
+    <div>
+        <p class="error"></p>
+    </div>
+
+    <div class="container">
+        <div id="box-lista">
+            <ul id="minha-lista">
+               
+            </ul>
+        </div>
+    </div>
+
+    <div id="btn-todos">
+        <button class="btn" id="btn-delete-all">Deletar todas</button>
+        <button class="btn" id="btn-marcar-all">Marcar todas</button>
+        <button class="btn" id="btn-desmarcar-all">Desmarcar todas</button>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
