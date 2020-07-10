@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>To do list</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="title" id="task-label">Lista de tarefas da Jack</h1>
+        <input type="text" required placeholder="add tasks" id="taskInput" class="task-input" action="/add-task">
+
+        <button class="add-button" id="addButton" type="submit">Add</button>
+
+        <ul id="listaTarefas" class="task-list">
+
+
+
+
+        </ul>
+
+        <div class="button-flex">
+            <button class="delete-button" id="deleteButton" type="submit">Delete All</button>
+            <button class="check-button" id="checkButton" type="submit">Check All</button>
+        </div>
+
+        <p class="error"></p>
+    </div>
+
+    <script type="text/javascript" src="../JS/script.js"> </script>
+
+</body>
+
+</html>
