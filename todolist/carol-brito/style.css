@@ -19,7 +19,7 @@ header {
     font-size: 1.5rem;
 }
 
-header, form {
+header, .form {
     min-height: 20vh;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@ header, form {
     flex-direction:column
 }
 
-form input, form button, form div {
+.form input, .form button, .form div {
     padding: 0.3rem;
     font-size: 1.4rem;
     border: none;
@@ -35,14 +35,14 @@ form input, form button, form div {
 
 }
 
-form button {
+.form button {
     color: #684A6B;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-form button:hover {
+.form button:hover {
     background: #684A6B;
     color: white;
 }

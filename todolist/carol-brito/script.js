@@ -1,12 +1,9 @@
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
-const filterOption = document.querySelector(".filter-todo")
 
 //event listeners 
 todoButton.addEventListener('click', addTodo);
-todoList.addEventListener('click', deleteItem);
-filterOption.addEventListener('click', checkItem);
 
 
 //function
@@ -15,7 +12,7 @@ function addTodo(event) {
     event.preventDefault();
 
     if (todoInput.value.length === 0) {
-        alert('Please, type an activity') 
+        alert (`Please, type an activity.`)
     }
     else {
         const todoDiv = document.createElement('div');
@@ -45,9 +42,23 @@ function addTodo(event) {
 }
 
 function deleteItem(item) {
-    item.parentElement.remove();
+    item.parentNode.remove();
 }
 
 function checkItem(item) {
-    item.parentElement.classList.toggle('completed');
+    item.parentNode.classList.toggle('completed');
+}
+
+function deleteAll() {
+    for(let i = todoList.children.length - 1; todoList.children.length > 0; i--) {
+        todoList.children[i].remove();
+    }
+}
+
+function checkAll() {
+    for(let i = 0; i < todoList.children.length; i++) {
+        if(todoList.children[i].classList[todoList.children[i].classList.length - 1] !== 'completed') {
+            todoList.children[i].classList.toggle('completed');
+        }
+    }
 }

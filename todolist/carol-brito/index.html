@@ -17,10 +17,10 @@
     <header>
         <h1>Carol's TO DO list</h1>
     </header>
-    <form>
+    <div class="form">
         <div class="options filter-todo">
-            <button id="check-all">Check All</button>
-            <button id="delete-all">Delete All</button>
+            <button id="check-all" onclick="checkAll()">Check All</button>
+            <button id="delete-all" onclick="deleteAll()">Delete All</button>
         </div>
         <div class="lista">
             <input type="text" class="todo-input">
@@ -28,8 +28,7 @@
                 <i class="fas fa-plus"></i>
             </button>
         </div>
-
-    </form>
+    </div>
     <div class="todo-container">
         <ul class="todo-list"></ul>
     </div>
