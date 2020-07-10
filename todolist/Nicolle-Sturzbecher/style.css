@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, #6699ff,  #e6eeff );
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1,5rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+header,form{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding:0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button{
+    color: #003399;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    color: white;
+    background:#003399;
+}
+
+.todo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1,5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex:1;
+}
+
+.trash-btn, .complete-btn{
+    background: #003399;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background:rgb(73, 204, 73)
+}
+
+/*space in item*/
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+/*stop button eye bug*/
+.fa-trash, .fa-check, .fa-search{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.fall{
+    transform: translate(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+/* parte do select all - completed - Uncompleted 
+NÃO ROLOU PQ O FOREACH BUGOU, SÓ GZUS PRA DESBUGAR*/
+
+select{
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color:#003399;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1.08rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #003399;
+    top:0;
+    right:0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.select:hover::after{
+    background: white;
+    color: #003399;
+}
+
+.deleteAll-btn{
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    border: none;
+    background: #003399;
+    color: white;
+}
+
+.deleteAll-btn:hover{
+    background: white;
+    color:#003399;
+}
+
+.deleteAll-button{
+    padding: 1.3rem;
+}
+
+.checkAll-btn{
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    border: none;
+    background: #003399;
+    color: white;
+}
+
+.checkAll-btn:hover{
+    background: white;
+    color:#003399;
+}
+
+.checkAll-button{
+    padding: 1.3rem;
+}
+
+.search-button{
+    background: white;
+    color:#003399;
+}
+
+.search-button:hover{
+    background: #003399;
+    color: white;
+}
+
+.align-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
