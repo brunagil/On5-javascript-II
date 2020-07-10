@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>To do list</title>
+</head>
+
+<body>
+
+    <div id="containerId">
+
+        <div class="header">
+
+            <h1 class="title" id="name-label"> C'mon, do something </h1>
+
+        </div>
+    <div class="group__input">
+        <!-- "input" closes automatically (go figure) -->
+        <!-- aria-label -->
+        <!-- <input type="checkbox" name="checkThis" class="checkbox"> -->
+
+        <input class="input__search" type="text" placeholder="Chores" aria-label="Search">
+        <!-- <input type="checkbox" name="checkThis" class="checkbox"> -->
+        <button class="button__search" > Add </button>
+
+        <!-- // isso fica escondido; se colocar erro entre a classe e o p, podemos ver o texto erro.  -->
+        <p class="error"></p>
+    </div>
+
+    <ul id="list"></ul>
+    
+    <!-- buttons -->
+    <button class="checkCheck" id="btnCheckCheck" type="submit"> Check them all </button>
+    
+    <button class='button__delete'>Delete them all</button> 
+
+    <!-- <div class="container"> -->
+        <img class="myImg" src="imgs/cf7.jpg">
+    <!-- </div> -->
+    
+    <script type="text/javascript"  src="./script.js"></script>
+
+</body>
+</html>
