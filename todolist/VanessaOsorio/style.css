@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+     background-color: #12338d;
+     color: white;
+     font-family:'Yanone Kaffeesatz', sans-serif;
+     min-height: 100vh;
+
+ }
+ header{
+     font-size: 30px;     
+ }
+ header,form{
+     min-height: 20vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+form input{
+    padding: 1rem;
+    font-size: 15pt;
+    border: none;
+    background: white;
+    width: 50%;
+}
+form button{
+    padding: 1rem;
+    font-size: 15pt;
+    border: none;
+    background: white;
+
+
+}
+form button{
+    color:#12338d;
+    background: white;
+    cursor: pointer;
+    transform: all 0.3s ease;
+    margin-right: 30px;
+  
+
+    
+}
+form button:hover {
+    background: #12338d;
+    color: white; 
+}
+.error{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 50%;
+    list-style: none;
+}
+.todo{
+    margin: 0.8rem;
+    background: white;
+    color: black;
+    font-size: 20pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    transition: all 0.5s ease;
+
+}
+.todo li{
+    flex:1;
+}
+.trash-btn,
+.completo-btn{
+    background: #12148d;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+.completo-btn{
+    background: #039728;
+
+}
+.todo-item{
+    padding: 10px 10px;
+}
+.fas{
+    pointer-events: none;
+}
+.completo{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.fa-power-off, .fa-tasks{
+    padding: 1rem 1rem;
+    max-width: 50%;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+.button-delete-all{
+    margin: 1rem;
+    font-size: 1rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #12148d;
+    color: white;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bolder;
+    font-size: 1.1rem;
+
+}
+.select {
+    margin-left: 1rem;
+    position: relative;
+    overflow: hidden;
+
+}
+select {
+    color: #12148d;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+.select::after {
+    content:"\25BC";
+    position: absolute;
+    background: #12148d;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none ;
+    transition: all 0.3 ease;
+
+}
+.select:hover::after{
+    background-color: white;
+    color: #12148d;
+
+}
