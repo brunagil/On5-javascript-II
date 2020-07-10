@@ -16,10 +16,6 @@ button.addEventListener('click', function() {
     }
 })
 
-function removeListaItem(item) {
-    item.parentNode.remove()
-}
-
 //botão para deletar lista
 buttonDeleteAll.addEventListener('click', function() {
     lista.innerHTML = '';
