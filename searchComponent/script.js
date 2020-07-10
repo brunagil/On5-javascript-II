@@ -25,3 +25,31 @@ const cards = [
         imagem: "https://facesocial.files.wordpress.com/2010/06/clip_image0021.jpg?w=775"
     }
 ];
+
+
+const button = document.querySelector('.button__search')
+const resultados = document.getElementById('resultados')
+
+
+
+button.addEventListener('click', function() {
+
+    for (let i = 0; i < cards.length; i++) {
+        console.log(cards[i])
+
+        resultados.innerHTML += `
+        <div class="card" onclick="makeItGrey(this)">
+            <button class="card__button" onclick="removeCard(this)">X</button>
+            <img class="imagem" src="${cards[i].imagem}"/>
+            <div class="">
+                <h2>${cards[i].titulo}</h2>
+                <a class="linkMusica" href="${cards[i].linkMusica}">
+                    <strong>Música</strong>
+                </a>
+            </div>
+        </div>
+    `
+    }
+
+})
+
