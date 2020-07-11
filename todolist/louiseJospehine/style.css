@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(#00a5e4 , #89a1ef);
+
+}
+
+.abraca{
+    width: 80%;
+    background-color: #fecef1;
+    text-align: center;
+    box-shadow: 0 7px 30px rgba(62, 9,11,.3);
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.imagem {
+    background-image: url("./img/galaxy.jpeg");   
+    height: 130px;
+    background-size: cover;
+    background-position: 10% 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1{
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    font-family: 'Bangers', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    padding: 4%;
+    letter-spacing: 15px;
+}
+
+.input__add {
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+}
+
+.button__add {
+    width: 10%;
+    background-color: #89a1ef;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.error {
+    color:red;
+    font-size: 12px;
+    margin: 6px 0 6px 6px;
+}
+
+li{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-align: left
+}
+.deleta{
+    width: 10%;
+    background-color: #89a1ef;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    color: red;
+    margin: 10px;
+    border: none;
+    background: transparent;
+
+}
+
+.checkbox{
+    width: 5%;
+    height: 25px;
+
+}
+
+
+.check {
+    text-decoration: line-through;
+}
+
+.button__deleteall {
+    width: 10%;
+    background-color: #89a1ef;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    color: red;
+    margin: 15px;
+
+}
+.button__checkall {
+    width: 10%;
+    background-color: #89a1ef;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    color: #ffffff;    
+    margin: 15px;
+
+}
