@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Todo List</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="java.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="banner.png" alt="fundo">
+        <div class="titulo">
+            <h1>LISTA DE TAREFAS</h1>
+        </div>
+    </div>
+    <div id="container">
+
+        <h2>TAREFAS<i class="fa fa-plus"></i></h2>
+
+        <input type="text" name="" placeholder="Adicione uma tarefa" class="addtarefa">
+        <button class="button-add" id="buttonAdd" type="submit">Adicione uma nova tarefa</button>
+        <button class="deleteAll">Apague tudo</button>
+        <ul class="listando">
+            <li class="list-item">
+                <input type="checkbox" name="checkThis" class="checkbox">
+                <p class="list-text"></p>
+                <i class="fas fa-trash-restore"  id="deleteTask" onclick="deleteLiItem(this)">
+                
+                <hr></li>
+
+        </ul>
+    </div>
+    <div>
+        <p class="error"> Error</p>
+    </div>
+    
+</body>
+
+</html>

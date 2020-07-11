@@ -1,0 +1,109 @@
+body {
+	font-family: Roboto;
+	background: plum;  
+}
+
+.banner{
+  text-align: center;
+  opacity: 50%;
+  width: auto;
+}
+
+h1 {
+	background-color: palevioletred;
+	color: black;
+	margin:  0;
+	padding: 10px 20px;
+    text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+h2 {
+	background-color: pink;
+	color: purple;
+	margin:  0;
+	padding: 10px 20px;
+    text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.button-add{
+	border:1px solid #f87baf;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	font-weight:bold;
+	font-size:13px;
+	padding:6px 10px;
+	text-decoration:none;
+}
+.deleteAll{
+	color: crimson;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	font-weight:bold;
+	font-size:13px;
+	padding:6px 10px;
+	text-decoration:none;
+}
+
+ul {
+	list-style: none;
+	margin:  0;
+	padding: 0;
+}
+
+li {
+	background-color: #fff;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+
+span {
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	transition: 0.3s linear;
+	opacity: 0;
+}
+
+input {
+	color: #2980b9;
+	font-size: 18px;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus {
+	background-color: #fff;
+	border: 3px solid #2980b9;
+	outline:  none;
+}
+
+.fa-plus {
+	float: right;
+}
+
+#container {
+	width: 360px;
+	margin:  100px auto;
+	background-color: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
