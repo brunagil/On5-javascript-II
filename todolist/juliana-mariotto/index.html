@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>To do List</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Add a new task:</h1>
+        <div class="group-input">
+            <input class="input-search" id="tarefa" type="search" placeholder="Add tasks" aria-label="Search">
+            <button class="btn-search" id="btn-add">ADD</button>
+        </div>
+
+        <div>
+            <p class="error"></p>
+        </div>
+
+        <div id="box-lista">
+            <ul id="minha-lista">
+            </ul>
+        </div>
+
+        <div id="btn-all">
+            <button class="btn" id="btn-delete-all">Delete All</button>
+            <button class="btn" id="btn-check-all">Check All</button>
+            <button class="btn" id="btn-uncheck-all">Uncheck All</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
