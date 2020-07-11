@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.error {
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group__input {
+    display: flex;
+    flex-direction: column;
+}
+
+.button__add {
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list-item {
+    display: list-item;
+    list-style-position: initial;
+    align-items: center;
+    box-sizing: border-box;
+    }
+
+.button__delete-all {
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button__check-all {
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.delete-task {
+    width: 15%;
+    border: none;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.checked {
+    text-decoration: line-through;
+    font-family: 'Roboto', sans-serif;
+}
