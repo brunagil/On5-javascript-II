@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <title>To do list</title>
+
+</head>
+
+<body>
+
+    <div class='container'>
+        <div class='titulo'>
+
+            <h1>To do list</h1>
+        </div>
+        
+    <div class="group__input">
+        <input class="input__search" type="search" placeholder="O que fazer hoje?" aria-label="Search">
+        <button class="button__search"> Adicionar Tarefa </button>
+
+        <p class="error"></p> <!-- caso o campo for vazio, vai puxar o error do js-->
+    </div>
+   
+   
+    <div class='button'>
+
+       <button class ='button__delete'>Deletar toda minha lista</button>
+       <button class="button-check-all" id="buttonCheckAll" type="submit">Checar toda a lista</button> 
+
+   </div>
+    
+</div>
+        
+    
+    <div class="list">
+            
+        <ul id="lista"></ul>
+             
+    </div>
+
+
+
+   <script type="text/javascript"  src="script.js"></script>
+</body>
+</html>
