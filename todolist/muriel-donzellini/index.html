@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--META TAGS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LOCAL SOURCES-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+    <title>To Do List</title>
+</head>
+
+<body>
+    <main class="toDoList__principal">
+        <!--HEADER-->
+        <header class="toDoList__header">
+            <h1 class="toDoList__header--title">To Do List</h1>
+            <input class="toDoList__header--input" placeholder="New task goes here..."></input>
+            <button class="toDoList__header--button" onclick="addNewTask()">Add Task</button>
+        </header>
+
+        <!--TO DO LIST-->
+        <section class="toDoList__body">
+            <!--UL-->
+            <ul id="toDoList__body--ul" class="toDoList__body--list">
+                <li class="toDoList__body--paragraph"></li>
+            </ul>
+
+            <!--BUTTONS CHECK ALL/DELETE-->
+            <div class="toDoList__buttons">
+                <button class="toDoList__buttons--allDone">All Done</button>
+                <button class="toDoList__buttons--deleteAll">Delete All</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

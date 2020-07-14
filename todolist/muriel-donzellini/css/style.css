@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+  }
+
+  .toDoList__principal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .toDoList__header {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .toDoList__header--title {
+      text-align: center;
+  }
+
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+
+  ul li:hover {
+    background: #ddd;
+  }
+
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+
+  #toDoList__body--ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  
